@@ -24,7 +24,7 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="space-y-7">
+        <section className="space-y-7 w-[70%] mx-auto">
           <CaseStudyCard 
             project="Windsurf Brand" 
             company="Shorter, more effective in-product education to increase user activation" 
