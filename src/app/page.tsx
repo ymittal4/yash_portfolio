@@ -30,12 +30,16 @@ export default function Home() {
             company="Shorter, more effective in-product education to increase user activation" 
             year="2024" 
             bgColor="#F1F2F5"
+            videoSrc="/videos/windsurf-onboarding.mp4"
+            videoPoster="/videos/windsurf-onboarding-poster.jpg"
           />
           <CaseStudyCard 
             project="Code diff review" 
             company="Code diff review" 
             year="2025" 
             bgColor="#F1F2F5"
+            videoSrc="/videos/code-diff-review.mp4"
+            videoPoster="/videos/code-diff-review-poster.jpg"
           />
         </section>
       </main>
