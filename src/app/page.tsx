@@ -26,20 +26,19 @@ export default function Home() {
 
         <section className="space-y-7">
           <CaseStudyCard 
-            project="Windsurf Onboarding" 
+            project="Windsurf Brand" 
             company="Shorter, more effective in-product education to increase user activation" 
             year="2024" 
             bgColor="#F1F2F5"
-            videoSrc="/videos/windsurf-onboarding.mp4"
-            videoPoster="/videos/windsurf-onboarding-poster.jpg"
+            videoSrc="/demos/windsurf_website.mp4"
+            cropBottom={2}
           />
           <CaseStudyCard 
             project="Code diff review" 
             company="Code diff review" 
             year="2025" 
             bgColor="#F1F2F5"
-            videoSrc="/videos/code-diff-review.mp4"
-            videoPoster="/videos/code-diff-review-poster.jpg"
+            videoSrc="/demos/windsurf_website.mp4"
           />
         </section>
       </main>

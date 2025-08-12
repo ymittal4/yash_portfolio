@@ -6,6 +6,7 @@ export interface CaseStudyCardProps {
   bgColor?: string;
   videoSrc?: string;
   videoPoster?: string;
+  cropBottom?: number;
 }
 
 export function CaseStudyCard({
@@ -16,6 +17,7 @@ export function CaseStudyCard({
   bgColor,
   videoSrc,
   videoPoster,
+  cropBottom,
 }: CaseStudyCardProps) {
   const content = (
     <article 
@@ -23,11 +25,12 @@ export function CaseStudyCard({
         style={{ backgroundColor: bgColor }}
     >
       <div
-        className={`relative w-full bg-white overflow-hidden rounded-lg h-[680px]`}
+        className={`relative w-full bg-white overflow-hidden`}
       >
         {videoSrc ? (
           <video
-            className="w-full h-full object-cover"
+            className="w-full h-auto object-contain"
+            style={cropBottom ? { marginBottom: `-${cropBottom}px` } : {}}
             autoPlay
             muted
             loop
@@ -43,8 +46,8 @@ export function CaseStudyCard({
           </div>
         )}
       </div>
-      <div className="mt-2 text-[14px] pt-12 font-medium text-violet-600 text-center">{project}</div>
-      <div className="mt-2 text-center text-[12px] text-zinc-500">
+      <div className="mt-2 text-[16px] pt-12 font-medium text-black text-center">{project}</div>
+      <div className="mt-2 text-center text-[14px] text-zinc-500">
         {company} • {year}
       </div>
     </article>
