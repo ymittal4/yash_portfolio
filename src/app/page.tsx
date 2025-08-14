@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       <main className="mx-auto px-4 sm:px-6">
-        <header className="flex items-center justify-between max-w-5xl mx-auto py-40">
+        <header className="flex items-center justify-between max-w-5xl mx-auto py-60">
           <div className="space-y-1">
             <h1 className="text-md font-medium text-zinc-900">Yash Mittal</h1>
             <p className="text-sm text-zinc-600">Founding designer at Windsurf</p>
@@ -24,7 +24,7 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="space-y-7 w-[70%] mx-auto">
+        <section className="space-y-7 w-[100%] mx-auto">
           <CaseStudyCard 
             project="Windsurf Brand" 
             company="Shorter, more effective in-product education to increase user activation" 

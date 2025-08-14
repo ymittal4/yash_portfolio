@@ -21,7 +21,7 @@ export function CaseStudyCard({
 }: CaseStudyCardProps) {
   const content = (
     <article 
-        className={`p-40 sm:p-24`}
+        className={`p-40 sm:p-32`}
         style={{ backgroundColor: bgColor }}
     >
       <div
